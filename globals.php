@@ -5,6 +5,9 @@
     "bebasneue" => array(
       "name" => "Bebas Neue",
       "url"  => "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"),
+    "jersey15" => array( // Lisätty uusi fontti
+      "name" => "Jersey 15 Static",
+      "url"  => "https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"),  
     "leckerlione" => array(
       "name" => "Leckerli One",
       "url"  => "https://fonts.googleapis.com/css2?family=Leckerli+One&display=swa"),
@@ -23,9 +26,10 @@
     "sigmarone" => array(
       "name" => "Sigmar One",
       "url"  => "https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"),
-     "titanone" => array(
-       "name" => "Titan One",
-       "url"  => "https://fonts.googleapis.com/css2?family=Titan+One&display=swap")
+    "titanone" => array(
+      "name" => "Titan One",
+      "url"  => "https://fonts.googleapis.com/css2?family=Titan+One&display=swap")
+       
     );
 
   // Otsakkeen taustat aakkosjärjestyksessä.
