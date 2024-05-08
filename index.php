@@ -15,10 +15,13 @@
       <h1>Perhekalenteri</h1>
     </header>
     <section>
+      <div class="grid-container">
+        <div class="item1">
+          <form action="kalenteri.php" method="GET" target="_blank">
 
-      <form action="kalenteri.php" method="GET" target="_blank">
-
-        Vuosi: <input type="number" name="year" value="<?php echo date("Y"); ?>"><br>
+          Vuosi: <input type="number" name="year" value="<?php echo date("Y"); ?>"><br>
+        </div>
+        <div class="item2">
 
         Kuukausi:
         <select name="month">
@@ -28,6 +31,8 @@
           }
         ?>
         </select><br>
+        </div>
+        <div class="item3">
 
         Otsikkofontti:
         <select name="header">
@@ -37,7 +42,9 @@
           }
         ?>
         </select><br>
-
+        </div>
+        
+        <div class="item4">
         Kuva:
         <select name="bgimage">
         <?php
@@ -46,13 +53,18 @@
           }
         ?>
         </select><br>
+        </div>
+        <div class="item5">
 
         Perheenjäsenet:
         <textarea name="names" rows="5"><?= $defaultnames ?></textarea><br>
-
-        <input type="submit" value="Avaa kalenterisivu">
+        </div>
+        <div class="item6">
+        <input type="submit" value="Avaa kalenterisivu" class="button">
+        </div>
 
       </form>
+        </div>
     </section>
     <footer>
       <hr>

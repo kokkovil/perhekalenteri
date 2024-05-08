@@ -3,26 +3,135 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-color: #f8f9fa; 
+    background-image: url('backgrounds/liitutaulu2.jpg');
+    background-size: cover;
+    background-position: center; 
     font-family: Arial, sans-serif; 
-  }
+}
   
-  header {
-    background-color: #5b6d80; 
-    color: #fff; 
-    padding: 10px;
-    text-align: center;
-  }
+header {
+  background-color: rgb(59, 61, 61);; 
+  color: #fff; 
+  padding: 5px;
+  text-align: center;
+}
   
-  section {
+section {
     padding: 20px;
-  }
+}
   
-  footer {
-    background-color: #5b6d80; 
-    color: #fff; 
-    padding: 10px;
-    text-align: center;
-    margin-top: auto; 
-    font-size: 80%; /* 80% normaalista tekstikoosta */
+footer {
+  background-color: rgb(59, 61, 61);; 
+  color: #fff; 
+  padding: 15px;
+  text-align: center;
+  margin-top: auto; 
+  font-size: 80%; /* 80% normaalista tekstikoosta */
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    padding: 8px;
+    color: #fff;
+    
+}
+  
+.grid-container > div {
+  background-color: transparent;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  
+  
+}
+
+.item1 {
+  grid-row: 1; 
+  grid-column: 1 / span 2; 
+  width: 50%;
+  justify-self: flex-end;
+  
+}
+
+.item2 {
+  grid-row: 1; 
+  grid-column: 3 / span 2; 
+  width: 50%;
+  justify-self: flex-start;
+}
+
+.item3 {
+  grid-row: 2; 
+  grid-column: 1 / span 2; 
+  width: 50%;
+  justify-self: flex-end;
+}
+
+.item4 {
+  grid-row: 2;
+  grid-column: 3 / span 2;
+  width: 50%;
+  justify-self: flex-start;
+}
+
+
+.item5 {
+  grid-row: 3; 
+  grid-column: 1 / span 4; 
+  width: 50%;
+  justify-self: center; 
+  padding: 50px; 
+  border-radius: 50px; 
+}
+
+.item6 {
+  grid-row: 4; 
+  grid-column: 1 / span 4; 
+  width: 50%;
+  justify-self: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+    background-color: rgb(59, 61, 61);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(59, 61, 61);
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(59, 61, 61);;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2d3033;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
