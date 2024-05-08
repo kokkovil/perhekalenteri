@@ -74,6 +74,11 @@
       "color" => "#f9f9f9",
       "image" => "backgrounds/lehtilumessa.jpg"
     ),
+    "maailma" => array(
+      "name"  => "HelloWorld",
+      "color" => "rgba(150, 150, 150, 0.3)",
+      "image" => "backgrounds/maailma.jpg"
+    ),
     "marjat" => array(
       "name"  => "Marjat",
       "color" => "#d4b5c5",
